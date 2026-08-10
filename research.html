@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <title>SangMyung Univ. MSL</title>
+    <script type="text/javascript" src="research.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/styles/vendor/jquery.fancybox.min.css">
+    <script src="/scripts/vendor/jquery.fancybox.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="research.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="intro_bg">
+            <div class="header" id="link_header">
+                <div class="logo1"><a href="home.html"><img src="img/logo.png"></a></div>
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="member.html">MEMBERS</a></li>
+                    <li><a href="publications.html">PUBLICATOIN</a></li>
+                    <li><a href="projects.html">PROJECT</a></li>
+                    <li><a href="home.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="intro_text">                         
+                <h1>RESEARCH</h1>
+            </div>
+        </div>
+        <!-- intro end-->
+        <div class="main_text0" id="link_main_text0">
+            <div class="tab">
+                <div>
+                    <ul>
+                        <li onclick="onDisplay('#tab1')" class="tab1">Research</li>
+                        <li onclick="onDisplay('#tab2')" class="tab2">Demo</li>
+                        <li onclick="onDisplay('#tab3')" class="tab3">Experience</li>
+                        <li onclick="onDisplay('#tab4')" class="tab3">Facilities</li>
+                        <li onclick="onDisplay('#tab5')" class="tab3">Datasets</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <div id="tab1">
+                        <h1>Research</h1><br><br>
+                        <div class="research_body">
+                            <div>
+                                <div>
+                                    <h3>Deep learning</h3>
+                                    <br>
+                                    - Abstractional Artificial Intelligence<br>
+                                    - Unknown or atypical noise removal<br>
+                                </div>
+                                <div>
+                                    <h3>Digital Forensic</h3>
+                                    <br>
+                                    - Source camera identification <br>
+                                    - Mobile device identification<br>
+                                    - Mobile image/video dataset<br>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Reversible Data Hiding</h3>
+                                    <br>
+                                    - Compensation effect<br>
+                                    - Multi-dimensional histogram shifting<br>
+                                    - Optimal table with code mapping<br>
+                                </div>
+                                <div>
+                                    <h3>Multimedia Security</h3>
+                                    <br>
+                                    - Ad block for non-dependent platform<br>
+                                    - Secure image display to prevent analog hole<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" style="display: none;">
+                        <h1>Demo</h1><br>
+                        <div class="tab2_body">
+                            <div style="cursor: pointer;">
+                                <video src="demo/1.mp4" controls="controls" type="video/mp4"></video>
+                                <div onclick="tryDemo('ex1')">
+                                    <h3>Genuine Reversible Data Hiding Technique for H.264 Bitstream Using Multi-Dimensional Histogram Shifting</h3>
+                                    <br>
+                                    <br>압축된 이미지/비디오의 원본 컨텐츠를 손상시키지 않고 눈에 보이지 않는 데이터를 무손실 삽입하고 추출하는 기술.
+                                    <br>해당 기술을 사용하여 워터마킹 분야에서 미디어의 저작권 보호 및 배포를 위한 콘텐츠 배포 채널 추적 및 콘텐츠 태깅 등에 사용되고, 법적증거에 쓰일 CCTV, 차량용 블랙박스 및 의료용 사진의 변조를 방지하기 위해 쓰인다.
+                                    <br><br>*영상은 실험을 위해 눈에 보이도록 최대치의 데이터를 삽입한 예시입니다.
+                                    <br>*클릭 시 직접 체험해 보실 수 있습니다.
+                                </div>
+                            </div>
+                            <p class="demo_line"></p>
+                            <div>
+                                <video src="demo/2.mp4" controls="controls" type="video/mp4"></video>
+                                <div>
+                                    <h3>Object-wise Secure Image Display Method for Screen Capture Protection</h3>
+                                    <br>
+                                    <br>이미지의 저작권 보호를 위해 Analog hole 을 막는 기술로서, 보호 영역을 object detection 으로 protection zone 을 만들어 virtual fence 를 입힘으로서 저작권 보호 기능을 유지하면서 사용자의 인식된 이미지의 품질을 보장하는 기술
+                                </div>
+                            </div>
+                            <p class="demo_line"></p>
+                            <div onclick="tryDemo('ex2')" style="cursor: pointer;">
+                                <img src="demo/3.png">
+                                <div>
+                                    <h3>Camera model identification using a deep network and a reduced edge dataset</h3>
+                                    <br>
+                                    <br>다양한 카메라 기기에서 촬영된 이미지 데이터를 딥 네트워크를 통해 학습하여, 획득하거나 촬영한 원본 이미지가 어떠한 카메라 모델에서 촬영되었는지 확인할 수 있는 기술. 해당 기술을 사용하여 디지털 포렌식 분야에서 증거물을 보충해주는 자료로 사용할 수 있고, 동일한 내용의 두 이미지가 동일한 카메라에서 촬영되었는지에 대한 여부 및 조작에 대한 가능성 판단에 도움을 줄 수 있다. 
+                                    <br><br>*클릭 시 직접 체험해 보실 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" style="display: none;">
+                        <h1>Experience</h1><br>
+                        <div class="tab3_body">
+                            <div>
+                                <div>
+                                    <img src="demo/ex1.png" id="ex1" style="width: 500px;">
+                                    <br><br>
+                                </div>
+                                <div>
+                                    <h4>* 해당 기술을 사용하여 영상에 원하는 문장을 삽입 및 추출한 결과를 확인해보세요.</h4><br>
+                                    
+                                    1. 아래 입력창에 원하는 문장을 입력하고 DEMO 버튼을 누른다.<br>
+                                    2. 입력한 문장이 삽입된 영상이 자동으로 제작된다.<br>
+                                    3. 제작이 완료되면 영상과 정보가 자동으로 다운로드 된다.<br><br>
+                                    
+                                    <textarea id="ex1_text" placeholder="이곳에다 원하는 문장을 입력하세요."></textarea>
+                                    <div class="tryBox">
+                                        <div id="demo1" class="more" onclick="ex1_play()" style="margin-top: 20px;">
+                                            DEMO
+                                        </div>
+                                        <div id="loading" style="display: none;">
+                                            *영상 제작 중 입니다. 수 분 소요될 수 있습니다<br>
+                                            *페이지 이동 시 정상적으로 실행이 되지 않을 수 있습니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="demo_line"></p>
+                            <div>
+                                <div>
+                                    <img src="demo/3.png" id="ex2">
+                                </div>
+                                <div>
+                                    <h4>* 해당 기술을 사용하여 사진이 촬영된 스마트폰 모델을 확인해보세요.</h4><br>
+                                    
+                                    1. 스마트폰 기본 카메라 앱을 실행한 후에 사진을 한 장 촬영한다.<br>
+                                    2. 아래의 '파일 선택'을 누른 후에 촬영한 사진을 업로드한다.<br>
+                                    3. DEMO 버튼을 눌러 결과를 추출한다.<br>
+                                    3. 결과를 확인하고 필요에 따라 결과물을 다운받는다.<br><br>
+
+                                    * 스마트폰 모델 검출 정확도 및 모델은 다음 표에서 확인할 수 있습니다.<br><br>
+                                    
+                                    <img src="demo/try2.png" id="valiImg" style="cursor: pointer;" onclick="doImgPop('demo/try2.png')"><br>
+                                    *클릭 시 이미지가 확대됩니다<br><br>
+                                    <div class="tryBox">
+                                        <form method="POST" action="http://localhost:8080/guestbook/upload" enctype="multipart/form-data">
+                                            <input type="file" class="exFileUpload" name="file" id="" accept="image/*">
+                                            <input type="button" class="more" style="margin-left: 300px;" value="DEMO" onclick="play()">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="demo_line"></p>
+                        </div>
+                    </div>
+                    <div id="tab4" style="display: none;">
+                        <h1>Servers</h1><br>
+                        <div class="tab4_body">
+                            <div>
+                                <div>
+                                    <h3>Server PC 1</h3>
+                                    <br>
+                                    - CPU : Intel® Xeon® Silver 4114 2.20GHz<br>
+                                    - Memory : 128GB<br>
+                                    - GPU : NVIDIA Geforce RTX 2080 x 3<br>
+                                    - SSD : 4TB x 2<br>
+                                </div>
+                                <div>
+                                    <h3>Server PC 2</h3>
+                                    <br>
+                                    - CPU : Intel® Core™ i7-4790K 4.00GHz<br>
+                                    - Memory : 32GB<br>
+                                    - GPU : NVIDIA Geforce GTX 1080 Ti x 2<br>
+                                    - SSD : 4TB, 1TB<br>
+                                    - HDD : 2TB<br>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Server PC 3</h3>
+                                    <br>
+                                    - CPU : Intel® Core™ i9-11900K 3.50GHz<br>
+                                    - Memory : 32GB<br>
+                                    - GPU : NVIDIA Geforce GTX3060<br>
+                                    - SSD : 2TB x 2<br>
+                                </div>
+                                <div>
+                                    <h3>Server PC 4</h3>
+                                    <br>
+                                    - CPU : Intel® Core™ i7-10700F 2.90GHz<br>
+                                    - Memory : 16GB<br>
+                                    - GPU : NVIDIA Geforce GTX 3060<br>
+                                    - SSD : 500GB<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab5" style="display: none;">
+                        <h1>SMDB Datasets</h1><br>
+                        Reference: M. Gil, S. Kang, SMDB : Building camera source identification image database through croudsourcing, Journal of the Institute electronics and information engineers, 2022, pp.~. <a href="#" style="color: blues;">(link)</a><br>
+                        <div class="tab5_body">
+                            <div>
+                                <img src="img/research/datasets/2019.png" alt="">
+                            </div>
+                            <p class="demo_line"></p>
+                            <div>
+                                <img src="img/research/datasets/2021.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <!-- tab end -->
+
+        <footer>
+                
+            <div>
+                MSL. Multimedia Security Lab<br>
+                Addr. 서울 종로구 홍지문2길 20, R320<br>
+                02-781-7588<br>
+            </div>
+            <div>
+                <img src="img/main_logo01.png">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
